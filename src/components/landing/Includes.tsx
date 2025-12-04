@@ -34,8 +34,8 @@ const Includes = () => {
 
             {/* Pricing */}
             <div className="bg-secondary/30 py-8 px-6 text-center border-b border-border">
-              <div className="inline-block bg-primary/10 text-primary font-poppins font-semibold text-sm px-4 py-1.5 rounded-full mb-4">
-                🎉 35% OFF por tiempo limitado
+              <div className="inline-block bg-primary text-primary-foreground font-poppins font-bold text-lg px-6 py-2.5 rounded-full mb-4">
+                35% OFF por tiempo limitado
               </div>
               <div className="flex items-center justify-center gap-4 flex-wrap">
                 <span className="text-2xl text-muted-foreground line-through font-montserrat">
