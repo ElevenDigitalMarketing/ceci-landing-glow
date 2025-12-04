@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 @layer base {
   :root {
@@ -55,11 +55,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-montserrat antialiased;
+    @apply bg-background text-foreground font-poppins font-light antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair;
+    @apply font-poppins font-bold;
   }
 }
 
@@ -80,15 +80,15 @@
   }
 
   .heading-xl {
-    @apply text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold leading-tight text-foreground;
+    @apply text-4xl sm:text-5xl lg:text-6xl font-poppins font-bold leading-tight text-foreground;
   }
 
   .heading-lg {
-    @apply text-3xl sm:text-4xl font-playfair font-bold text-foreground;
+    @apply text-3xl sm:text-4xl font-poppins font-bold text-foreground;
   }
 
   .heading-md {
-    @apply text-2xl sm:text-3xl font-playfair font-semibold text-foreground;
+    @apply text-2xl sm:text-3xl font-poppins font-bold text-foreground;
   }
 
   .subtitle {
@@ -96,7 +96,7 @@
   }
 
   .body-text {
-    @apply text-base sm:text-lg font-montserrat text-muted-foreground leading-relaxed;
+    @apply text-base sm:text-lg font-poppins font-light text-muted-foreground leading-relaxed;
   }
 
   .badge-pink {
