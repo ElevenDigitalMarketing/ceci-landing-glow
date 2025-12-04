@@ -15,9 +15,9 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 13%;
 
-    --primary: 86 18% 61%;
+    --primary: 58 38% 51%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 86 18% 71%;
+    --primary-hover: 58 38% 61%;
 
     --secondary: 328 100% 90%;
     --secondary-foreground: 0 0% 13%;
@@ -33,13 +33,13 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 86 18% 61%;
+    --ring: 58 38% 51%;
 
     --radius: 0.5rem;
 
     /* Custom colors for the brand */
-    --ceci-green: 86 18% 61%;
-    --ceci-green-light: 86 18% 71%;
+    --ceci-green: 58 38% 51%;
+    --ceci-green-light: 58 38% 61%;
     --ceci-pink: 328 100% 90%;
     --ceci-gray: 0 0% 40%;
   }
