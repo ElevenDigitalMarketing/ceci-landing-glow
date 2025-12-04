@@ -32,6 +32,25 @@ const Includes = () => {
               </p>
             </div>
 
+            {/* Pricing */}
+            <div className="bg-secondary/30 py-8 px-6 text-center border-b border-border">
+              <div className="inline-block bg-primary/10 text-primary font-poppins font-semibold text-sm px-4 py-1.5 rounded-full mb-4">
+                🎉 35% OFF por tiempo limitado
+              </div>
+              <div className="flex items-center justify-center gap-4 flex-wrap">
+                <span className="text-2xl text-muted-foreground line-through font-montserrat">
+                  $120.000 ARS
+                </span>
+                <span className="font-playfair text-5xl font-bold text-primary">
+                  $76.889
+                </span>
+                <span className="text-lg text-muted-foreground font-montserrat">ARS</span>
+              </div>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Pago único • Acceso de por vida
+              </p>
+            </div>
+
             {/* Benefits */}
             <div className="p-8">
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
