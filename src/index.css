@@ -15,17 +15,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 13%;
 
-    --primary: 168 60% 30%;
+    --primary: 86 18% 61%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 150 40% 72%;
+    --primary-hover: 86 18% 71%;
 
-    --secondary: 320 50% 86%;
+    --secondary: 328 100% 90%;
     --secondary-foreground: 0 0% 13%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 320 50% 86%;
+    --accent: 328 100% 90%;
     --accent-foreground: 0 0% 13%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,14 +33,14 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 168 60% 30%;
+    --ring: 86 18% 61%;
 
     --radius: 0.5rem;
 
     /* Custom colors for the brand */
-    --ceci-green: 168 60% 30%;
-    --ceci-green-light: 150 40% 72%;
-    --ceci-pink: 320 50% 86%;
+    --ceci-green: 86 18% 61%;
+    --ceci-green-light: 86 18% 71%;
+    --ceci-pink: 328 100% 90%;
     --ceci-gray: 0 0% 40%;
   }
 }
