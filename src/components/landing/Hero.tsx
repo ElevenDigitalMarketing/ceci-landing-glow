@@ -1,10 +1,8 @@
 import { Star, Users, Clock, BookOpen } from "lucide-react";
 import ceciHero from "@/assets/ceci-hero.jpg";
 import logo from "@/assets/logo.png";
-
 const Hero = () => {
-  return (
-    <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 bg-gradient-to-b from-secondary/30 to-background">
+  return <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 bg-gradient-to-b from-secondary/30 to-background">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -28,9 +26,7 @@ const Hero = () => {
             {/* Rating */}
             <div className="flex items-center gap-4 mb-8">
               <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
               </div>
               <span className="font-poppins font-medium text-foreground">4.9/5</span>
               <span className="text-muted-foreground">• +500 alumnas satisfechas</span>
@@ -76,22 +72,12 @@ const Hero = () => {
           <div className="order-1 lg:order-2 animate-fade-in-right">
             <div className="relative">
               <div className="absolute -inset-4 bg-secondary/50 rounded-3xl -rotate-3"></div>
-              <img
-                src={ceciHero}
-                alt="Ceci Duca preparando recetas antiinflamatorias"
-                className="relative rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover"
-                loading="eager"
-              />
-              <div className="absolute -bottom-4 -left-4 bg-background rounded-xl p-4 shadow-lg">
-                <p className="font-poppins font-semibold text-primary text-sm">Próximo inicio</p>
-                <p className="font-playfair font-bold text-xl text-foreground">¡Cupos Limitados!</p>
-              </div>
+              <img src={ceciHero} alt="Ceci Duca preparando recetas antiinflamatorias" className="relative rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover" loading="eager" />
+              
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
