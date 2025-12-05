@@ -1,0 +1,1994 @@
+<!--
+===========================================
+LANDING CECI DUCA - BLOQUES PARA SYSTEME.IO
+===========================================
+Cada bloque es independiente.
+Copia el HTML y CSS de cada bloque por separado.
+Reemplaza las URLs de imágenes por las tuyas.
+===========================================
+-->
+
+<!-- ========================================= -->
+<!-- BLOQUE 1: HERO -->
+<!-- ========================================= -->
+
+<style>
+/* HERO STYLES */
+.ceci-hero {
+  padding: 100px 20px 60px;
+  background: linear-gradient(180deg, #fff5fa 0%, #ffffff 100%);
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-hero * {
+  box-sizing: border-box;
+}
+.ceci-hero-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+.ceci-hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+.ceci-hero-image-wrap {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+.ceci-hero-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 15px;
+}
+.ceci-hero-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.ceci-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+.ceci-hero h1 span {
+  color: #008980;
+}
+.ceci-hero-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.ceci-hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.ceci-hero-stars {
+  color: #008980;
+  font-size: 18px;
+}
+.ceci-hero-rating-text {
+  font-weight: 500;
+  color: #222222;
+}
+.ceci-hero-rating-count {
+  color: #666666;
+}
+.ceci-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.ceci-hero-btn-primary {
+  background: #008980;
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 137, 128, 0.3);
+}
+.ceci-hero-btn-primary:hover {
+  background: #00A699;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 137, 128, 0.4);
+}
+.ceci-hero-btn-secondary {
+  border: 2px solid #008980;
+  color: #008980;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+.ceci-hero-btn-secondary:hover {
+  background: #008980;
+  color: #ffffff;
+}
+.ceci-hero-stats {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #e5e5e5;
+}
+.ceci-hero-stat {
+  text-align: center;
+}
+.ceci-hero-stat-icon {
+  color: #008980;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.ceci-hero-stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0;
+}
+.ceci-hero-stat-label {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+.ceci-hero-image-bg {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: 15px;
+  bottom: 15px;
+  background: rgba(255, 202, 230, 0.5);
+  border-radius: 20px;
+  transform: rotate(-3deg);
+}
+.ceci-hero-image {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  aspect-ratio: 4/5;
+}
+@media (max-width: 768px) {
+  .ceci-hero {
+    padding: 80px 15px 40px;
+  }
+  .ceci-hero-container {
+    flex-direction: column-reverse;
+  }
+  .ceci-hero h1 {
+    font-size: 32px;
+  }
+  .ceci-hero-stats {
+    gap: 15px;
+  }
+  .ceci-hero-stat-number {
+    font-size: 22px;
+  }
+  .ceci-hero-buttons {
+    flex-direction: column;
+  }
+  .ceci-hero-btn-primary,
+  .ceci-hero-btn-secondary {
+    text-align: center;
+    width: 100%;
+  }
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<section class="ceci-hero">
+  <div class="ceci-hero-container">
+    <!-- Contenido -->
+    <div class="ceci-hero-content">
+      <img src="https://TU-DOMINIO.com/logo.png" alt="Ceci Duca" class="ceci-hero-logo">
+      <span class="ceci-hero-badge">12 Talleres + Ebook</span>
+      
+      <h1>Transforma tu salud con el <span>Ciclo de Cocina Antiinflamatoria</span></h1>
+      
+      <p class="ceci-hero-text">
+        Descubre cómo preparar recetas deliciosas que reducen la inflamación, 
+        mejoran tu digestión y te llenan de energía. Sin complicaciones, 
+        con ingredientes accesibles y resultados reales.
+      </p>
+      
+      <div class="ceci-hero-rating">
+        <span class="ceci-hero-stars">★★★★★</span>
+        <span class="ceci-hero-rating-text">4.9/5</span>
+        <span class="ceci-hero-rating-count">• +500 alumnas satisfechas</span>
+      </div>
+      
+      <div class="ceci-hero-buttons">
+        <a href="#inscripcion" class="ceci-hero-btn-primary">Quiero Inscribirme</a>
+        <a href="#programa" class="ceci-hero-btn-secondary">Ver Programa Completo</a>
+      </div>
+      
+      <div class="ceci-hero-stats">
+        <div class="ceci-hero-stat">
+          <div class="ceci-hero-stat-icon">📚</div>
+          <p class="ceci-hero-stat-number">12</p>
+          <p class="ceci-hero-stat-label">Talleres</p>
+        </div>
+        <div class="ceci-hero-stat">
+          <div class="ceci-hero-stat-icon">⏱️</div>
+          <p class="ceci-hero-stat-number">+20h</p>
+          <p class="ceci-hero-stat-label">Contenido</p>
+        </div>
+        <div class="ceci-hero-stat">
+          <div class="ceci-hero-stat-icon">👥</div>
+          <p class="ceci-hero-stat-number">+500</p>
+          <p class="ceci-hero-stat-label">Alumnas</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Imagen -->
+    <div class="ceci-hero-image-wrap">
+      <div class="ceci-hero-image-bg"></div>
+      <img src="https://TU-DOMINIO.com/ceci-hero.jpg" alt="Ceci Duca preparando recetas antiinflamatorias" class="ceci-hero-image">
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 2: PROBLEMS -->
+<!-- ========================================= -->
+
+<style>
+/* PROBLEMS STYLES */
+.ceci-problems {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-problems * {
+  box-sizing: border-box;
+}
+.ceci-problems-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.ceci-problems-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+.ceci-problems-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.ceci-problems h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 15px 0;
+}
+.ceci-problems-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0;
+}
+.ceci-problems-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+.ceci-problems-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+.ceci-problems-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+.ceci-problems-icon {
+  width: 50px;
+  height: 50px;
+  background: #ffcae6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.ceci-problems-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0 0 10px 0;
+}
+.ceci-problems-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+.ceci-problems-cta {
+  text-align: center;
+}
+.ceci-problems-btn {
+  background: #008980;
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 137, 128, 0.3);
+}
+.ceci-problems-btn:hover {
+  background: #00A699;
+  transform: translateY(-2px);
+}
+@media (max-width: 992px) {
+  .ceci-problems-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .ceci-problems {
+    padding: 60px 15px;
+  }
+  .ceci-problems h2 {
+    font-size: 28px;
+  }
+  .ceci-problems-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<section class="ceci-problems">
+  <div class="ceci-problems-container">
+    <div class="ceci-problems-header">
+      <span class="ceci-problems-badge">¿Te identificás?</span>
+      <h2>¿Sentís que tu cuerpo te pide un cambio?</h2>
+      <p class="ceci-problems-subtitle">
+        La inflamación crónica afecta tu calidad de vida. Pero con la alimentación correcta, 
+        podés transformar cómo te sentís cada día.
+      </p>
+    </div>
+    
+    <div class="ceci-problems-grid">
+      <div class="ceci-problems-card">
+        <div class="ceci-problems-icon">⚠️</div>
+        <h3>Hinchazón constante</h3>
+        <p>Aprenderás qué alimentos evitar y cómo preparar comidas que deshinchen naturalmente.</p>
+      </div>
+      
+      <div class="ceci-problems-card">
+        <div class="ceci-problems-icon">⚡</div>
+        <h3>Falta de energía</h3>
+        <p>Descubrirás recetas que nutren sin pesadez, dándote vitalidad durante todo el día.</p>
+      </div>
+      
+      <div class="ceci-problems-card">
+        <div class="ceci-problems-icon">❤️</div>
+        <h3>Problemas digestivos</h3>
+        <p>Dominarás técnicas de cocción y combinaciones que favorecen tu microbiota.</p>
+      </div>
+      
+      <div class="ceci-problems-card">
+        <div class="ceci-problems-icon">✨</div>
+        <h3>No sabés qué cocinar</h3>
+        <p>Tendrás un plan claro con +60 recetas prácticas y deliciosas para cada día.</p>
+      </div>
+    </div>
+    
+    <div class="ceci-problems-cta">
+      <a href="#inscripcion" class="ceci-problems-btn">Quiero Solucionar Esto</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 3: PROGRAM -->
+<!-- ========================================= -->
+
+<style>
+/* PROGRAM STYLES */
+.ceci-program {
+  padding: 80px 20px;
+  background: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-program * {
+  box-sizing: border-box;
+}
+.ceci-program-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+}
+.ceci-program-content {
+  flex: 1;
+  min-width: 300px;
+}
+.ceci-program-card {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e5e5;
+}
+.ceci-program-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.ceci-program h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+.ceci-program-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.ceci-program-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.ceci-program-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #222222;
+  font-size: 16px;
+}
+.ceci-program-number {
+  width: 32px;
+  height: 32px;
+  background: #ffcae6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #008980;
+  flex-shrink: 0;
+}
+.ceci-program-btn {
+  border: 2px solid #008980;
+  color: #008980;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+.ceci-program-btn:hover {
+  background: #008980;
+  color: #ffffff;
+}
+.ceci-program-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0 0 25px 0;
+}
+.ceci-program-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ceci-program-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #222222;
+  font-size: 16px;
+}
+.ceci-program-check {
+  width: 24px;
+  height: 24px;
+  background: #008980;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.ceci-program-bonus {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.ceci-program-bonus-icon {
+  width: 56px;
+  height: 56px;
+  background: #ffcae6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.ceci-program-bonus-title {
+  font-weight: 600;
+  color: #222222;
+  margin: 0;
+}
+.ceci-program-bonus-text {
+  font-size: 14px;
+  color: #666666;
+  margin: 5px 0 0 0;
+}
+@media (max-width: 768px) {
+  .ceci-program {
+    padding: 60px 15px;
+  }
+  .ceci-program h2 {
+    font-size: 28px;
+  }
+  .ceci-program-container {
+    flex-direction: column;
+  }
+}
+</style>
+
+<section class="ceci-program" id="programa">
+  <div class="ceci-program-container">
+    <div class="ceci-program-content">
+      <span class="ceci-program-badge">El Programa</span>
+      <h2>12 talleres prácticos para transformar tu cocina</h2>
+      <p class="ceci-program-text">
+        Cada taller es una experiencia completa donde aprenderás teoría, técnicas 
+        y recetas que podrás aplicar inmediatamente. Todo explicado paso a paso, 
+        sin términos complicados.
+      </p>
+      
+      <ul class="ceci-program-list">
+        <li><span class="ceci-program-number">1</span> Bases de la cocina antiinflamatoria</li>
+        <li><span class="ceci-program-number">2</span> Desayunos nutritivos y energizantes</li>
+        <li><span class="ceci-program-number">3</span> Snacks saludables sin culpa</li>
+        <li><span class="ceci-program-number">4</span> Sopas y caldos reconstituyentes</li>
+        <li><span class="ceci-program-number">5</span> Ensaladas creativas y saciantes</li>
+        <li><span class="ceci-program-number">6</span> Bowls equilibrados</li>
+        <li><span class="ceci-program-number">7</span> Proteínas vegetales y animales</li>
+        <li><span class="ceci-program-number">8</span> Salsas y aderezos caseros</li>
+        <li><span class="ceci-program-number">9</span> Postres sin azúcar refinada</li>
+        <li><span class="ceci-program-number">10</span> Menú semanal antiinflamatorio</li>
+        <li><span class="ceci-program-number">11</span> Fermentados caseros básicos</li>
+        <li><span class="ceci-program-number">12</span> Integración y estilo de vida</li>
+      </ul>
+      
+      <a href="#temario" class="ceci-program-btn">▶ Ver Temario Completo</a>
+    </div>
+    
+    <div class="ceci-program-card">
+      <h3>Lo que incluye cada taller:</h3>
+      <ul class="ceci-program-features">
+        <li><span class="ceci-program-check">✓</span> Clase en video de alta calidad (grabada)</li>
+        <li><span class="ceci-program-check">✓</span> Recetas descargables en PDF</li>
+        <li><span class="ceci-program-check">✓</span> Lista de compras del módulo</li>
+        <li><span class="ceci-program-check">✓</span> Tips y variaciones para cada receta</li>
+        <li><span class="ceci-program-check">✓</span> Acceso de por vida al contenido</li>
+        <li><span class="ceci-program-check">✓</span> Soporte en comunidad privada</li>
+      </ul>
+      
+      <div class="ceci-program-bonus">
+        <div class="ceci-program-bonus-icon">📚</div>
+        <div>
+          <p class="ceci-program-bonus-title">BONUS: Ebook Exclusivo</p>
+          <p class="ceci-program-bonus-text">+60 recetas antiinflamatorias adicionales</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 4: SYLLABUS -->
+<!-- ========================================= -->
+
+<style>
+/* SYLLABUS STYLES */
+.ceci-syllabus {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-syllabus * {
+  box-sizing: border-box;
+}
+.ceci-syllabus-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ceci-syllabus-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.ceci-syllabus-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.ceci-syllabus h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 15px 0;
+}
+.ceci-syllabus-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  margin: 0;
+}
+.ceci-syllabus-module {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.ceci-syllabus-module-header {
+  padding: 20px 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s ease;
+}
+.ceci-syllabus-module-header:hover {
+  background: #fafafa;
+}
+.ceci-syllabus-module-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffcae6;
+  min-width: 50px;
+}
+.ceci-syllabus-module-info {
+  flex: 1;
+}
+.ceci-syllabus-module-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0 0 5px 0;
+}
+.ceci-syllabus-module-duration {
+  font-size: 14px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ceci-syllabus-module-toggle {
+  font-size: 20px;
+  color: #666666;
+  transition: transform 0.3s ease;
+}
+.ceci-syllabus-module.open .ceci-syllabus-module-toggle {
+  transform: rotate(180deg);
+}
+.ceci-syllabus-module-content {
+  display: none;
+  padding: 0 25px 25px 90px;
+}
+.ceci-syllabus-module.open .ceci-syllabus-module-content {
+  display: block;
+}
+.ceci-syllabus-module-desc {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+}
+.ceci-syllabus-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ceci-syllabus-topic {
+  background: #f5f5f5;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ceci-syllabus-topic-icon {
+  color: #008980;
+}
+@media (max-width: 768px) {
+  .ceci-syllabus {
+    padding: 60px 15px;
+  }
+  .ceci-syllabus h2 {
+    font-size: 28px;
+  }
+  .ceci-syllabus-module-header {
+    padding: 15px;
+  }
+  .ceci-syllabus-module-content {
+    padding: 0 15px 20px 15px;
+  }
+  .ceci-syllabus-module-number {
+    font-size: 22px;
+    min-width: 40px;
+  }
+  .ceci-syllabus-module-title {
+    font-size: 16px;
+  }
+}
+</style>
+
+<section class="ceci-syllabus" id="temario">
+  <div class="ceci-syllabus-container">
+    <div class="ceci-syllabus-header">
+      <span class="ceci-syllabus-badge">Temario Completo</span>
+      <h2>Todo lo que vas a aprender</h2>
+      <p class="ceci-syllabus-subtitle">12 módulos diseñados para llevarte de principiante a experta en cocina antiinflamatoria.</p>
+    </div>
+    
+    <div class="ceci-syllabus-module open">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">01</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Bases de la Cocina Antiinflamatoria</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 90 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Entenderás qué es la inflamación, cómo afecta tu cuerpo y cuáles son los pilares de una alimentación que la reduce.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Qué es la inflamación crónica</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Alimentos inflamatorios vs antiinflamatorios</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Tu despensa antiinflamatoria básica</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Planificación semanal</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">02</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Desayunos Nutritivos y Energizantes</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 75 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Recetas para empezar el día con energía sostenida, sin picos de azúcar ni pesadez.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Porridge antiinflamatorio</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Smoothies verdes</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Tostadas nutritivas</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Preparaciones make-ahead</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">03</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Snacks Saludables Sin Culpa</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 60 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Opciones rápidas y deliciosas para entre comidas que nutren en lugar de inflamar.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Hummus y dips caseros</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Barritas energéticas</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Snacks salados</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Opciones dulces sin azúcar</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">04</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Sopas y Caldos Reconstituyentes</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 90 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Preparaciones que sanan desde adentro, perfectas para el sistema digestivo.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Caldo de huesos medicinal</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Sopas cremosas sin lácteos</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Consomés depurativos</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Gazpachos y sopas frías</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">05</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Ensaladas Creativas y Saciantes</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 75 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Más allá de la lechuga: ensaladas que son platos completos y deliciosos.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Bases de hojas verdes</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Proteínas para ensaladas</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Toppings antiinflamatorios</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Aderezos caseros</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">06</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Bowls Equilibrados</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 90 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">La fórmula perfecta para crear bowls nutritivos, coloridos y satisfactorios.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Buddha bowls</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Poke bowls saludables</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Grain bowls</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Bases de vegetales asados</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">07</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Proteínas Vegetales y Animales</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 90 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Técnicas de cocción que preservan nutrientes y maximizan sabor.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Legumbres bien preparadas</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Pescados y mariscos</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Carnes magras</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Tofu y tempeh</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">08</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Salsas y Aderezos Caseros</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 60 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Transforma cualquier plato con salsas que suman nutrientes sin inflamar.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Vinagretas saludables</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Salsas cremosas sin lácteos</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Pestos variados</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Aliños asiáticos</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">09</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Postres Sin Azúcar Refinada</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 90 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Dulces que satisfacen sin los efectos negativos del azúcar procesada.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Endulzantes naturales</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Postres de frutas</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Chocolates saludables</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Helados sin lácteos</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">10</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Menú Semanal Antiinflamatorio</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 75 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Cómo organizar tu semana para comer bien sin estrés ni complicaciones.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Batch cooking</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Organización de la despensa</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Menús tipo</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Adaptaciones para toda la familia</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">11</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Fermentados Caseros Básicos</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 90 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Introducción a los alimentos fermentados para nutrir tu microbiota.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Chucrut y vegetales fermentados</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Kéfir de agua</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Kombucha básica</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Seguridad en fermentación</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ceci-syllabus-module">
+      <div class="ceci-syllabus-module-header" onclick="this.parentElement.classList.toggle('open')">
+        <span class="ceci-syllabus-module-number">12</span>
+        <div class="ceci-syllabus-module-info">
+          <h3 class="ceci-syllabus-module-title">Integración y Estilo de Vida</h3>
+          <span class="ceci-syllabus-module-duration">⏱️ 60 min</span>
+        </div>
+        <span class="ceci-syllabus-module-toggle">▼</span>
+      </div>
+      <div class="ceci-syllabus-module-content">
+        <p class="ceci-syllabus-module-desc">Cómo mantener estos hábitos a largo plazo y adaptarlos a tu vida real.</p>
+        <div class="ceci-syllabus-topics">
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Comer fuera de casa</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Viajes y eventos</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Manejo del estrés</span>
+          <span class="ceci-syllabus-topic"><span class="ceci-syllabus-topic-icon">📄</span> Plan de mantenimiento</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 5: ABOUT -->
+<!-- ========================================= -->
+
+<style>
+/* ABOUT STYLES */
+.ceci-about {
+  padding: 80px 20px;
+  background: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-about * {
+  box-sizing: border-box;
+}
+.ceci-about-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+.ceci-about-image-wrap {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+.ceci-about-image-bg {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  right: -15px;
+  bottom: 15px;
+  background: rgba(0, 137, 128, 0.1);
+  border-radius: 20px;
+  transform: rotate(3deg);
+}
+.ceci-about-image {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.ceci-about-content {
+  flex: 1;
+  min-width: 300px;
+}
+.ceci-about-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.ceci-about h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 20px 0;
+}
+.ceci-about-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.ceci-about-credentials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.ceci-about-credential {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ceci-about-credential-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffcae6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.ceci-about-credential-text {
+  font-size: 14px;
+  color: #222222;
+}
+.ceci-about-quote {
+  background: #ffffff;
+  border-left: 4px solid #008980;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 0;
+}
+.ceci-about-quote p {
+  font-size: 18px;
+  font-style: italic;
+  color: #222222;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+}
+.ceci-about-quote cite {
+  font-style: normal;
+  font-weight: 600;
+  color: #008980;
+}
+@media (max-width: 768px) {
+  .ceci-about {
+    padding: 60px 15px;
+  }
+  .ceci-about h2 {
+    font-size: 28px;
+  }
+  .ceci-about-credentials {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<section class="ceci-about" id="sobre-mi">
+  <div class="ceci-about-container">
+    <div class="ceci-about-image-wrap">
+      <div class="ceci-about-image-bg"></div>
+      <img src="https://TU-DOMINIO.com/ceci-about.jpg" alt="Ceci Duca - Instructora de Cocina Antiinflamatoria" class="ceci-about-image">
+    </div>
+    
+    <div class="ceci-about-content">
+      <span class="ceci-about-badge">Sobre Mí</span>
+      <h2>Hola, soy Ceci Duca</h2>
+      
+      <p class="ceci-about-text">
+        Mi historia con la alimentación antiinflamatoria comenzó cuando enfrenté 
+        mis propios problemas de salud. Después de años de investigación, formación 
+        y práctica, descubrí el poder transformador de la comida real.
+      </p>
+      
+      <p class="ceci-about-text">
+        Hoy, mi misión es compartir todo lo que aprendí de manera simple y 
+        accesible. No creo en dietas restrictivas ni en comidas aburridas. 
+        Creo en el placer de comer bien, en recetas que toda la familia disfruta 
+        y en resultados que se sienten desde la primera semana.
+      </p>
+      
+      <div class="ceci-about-credentials">
+        <div class="ceci-about-credential">
+          <span class="ceci-about-credential-icon">🏆</span>
+          <span class="ceci-about-credential-text">Especialista en Nutrición Funcional</span>
+        </div>
+        <div class="ceci-about-credential">
+          <span class="ceci-about-credential-icon">📖</span>
+          <span class="ceci-about-credential-text">+10 años de experiencia en cocina saludable</span>
+        </div>
+        <div class="ceci-about-credential">
+          <span class="ceci-about-credential-icon">👥</span>
+          <span class="ceci-about-credential-text">+500 alumnas transformadas</span>
+        </div>
+        <div class="ceci-about-credential">
+          <span class="ceci-about-credential-icon">❤️</span>
+          <span class="ceci-about-credential-text">Apasionada por el bienestar integral</span>
+        </div>
+      </div>
+      
+      <blockquote class="ceci-about-quote">
+        <p>"La cocina antiinflamatoria no es una dieta, es un estilo de vida que te devuelve el control de tu salud."</p>
+        <cite>— Ceci Duca</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 6: TESTIMONIALS -->
+<!-- ========================================= -->
+
+<style>
+/* TESTIMONIALS STYLES */
+.ceci-testimonials {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-testimonials * {
+  box-sizing: border-box;
+}
+.ceci-testimonials-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.ceci-testimonials-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.ceci-testimonials-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.ceci-testimonials h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 15px 0;
+}
+.ceci-testimonials-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  margin: 0;
+}
+.ceci-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.ceci-testimonial-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+.ceci-testimonial-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+.ceci-testimonial-quote {
+  font-size: 40px;
+  color: #ffcae6;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.ceci-testimonial-stars {
+  color: #008980;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.ceci-testimonial-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.ceci-testimonial-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0;
+}
+.ceci-testimonial-role {
+  font-size: 14px;
+  color: #666666;
+  margin: 5px 0 0 0;
+}
+@media (max-width: 992px) {
+  .ceci-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .ceci-testimonials {
+    padding: 60px 15px;
+  }
+  .ceci-testimonials h2 {
+    font-size: 28px;
+  }
+  .ceci-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<section class="ceci-testimonials" id="testimonios">
+  <div class="ceci-testimonials-container">
+    <div class="ceci-testimonials-header">
+      <span class="ceci-testimonials-badge">Testimonios</span>
+      <h2>Lo que dicen nuestras alumnas</h2>
+      <p class="ceci-testimonials-subtitle">Más de 500 mujeres ya transformaron su relación con la comida y su salud.</p>
+    </div>
+    
+    <div class="ceci-testimonials-grid">
+      <div class="ceci-testimonial-card">
+        <div class="ceci-testimonial-quote">"</div>
+        <div class="ceci-testimonial-stars">★★★★★</div>
+        <p class="ceci-testimonial-text">"Después de años con hinchazón y cansancio, este programa me cambió la vida. Las recetas son deliciosas y mi familia las ama. Bajé 5 kilos sin hacer dieta."</p>
+        <p class="ceci-testimonial-name">María García</p>
+        <p class="ceci-testimonial-role">Mamá de 2</p>
+      </div>
+      
+      <div class="ceci-testimonial-card">
+        <div class="ceci-testimonial-quote">"</div>
+        <div class="ceci-testimonial-stars">★★★★★</div>
+        <p class="ceci-testimonial-text">"Pensé que no tendría tiempo, pero las recetas son tan simples que ahora cocino más que antes. Mi digestión mejoró increíblemente y tengo más energía."</p>
+        <p class="ceci-testimonial-name">Laura Fernández</p>
+        <p class="ceci-testimonial-role">Ejecutiva</p>
+      </div>
+      
+      <div class="ceci-testimonial-card">
+        <div class="ceci-testimonial-quote">"</div>
+        <div class="ceci-testimonial-stars">★★★★★</div>
+        <p class="ceci-testimonial-text">"Como profesional de la salud, recomiendo este programa a mis pacientes. Ceci explica todo con fundamento científico pero de forma comprensible."</p>
+        <p class="ceci-testimonial-name">Sofía Martínez</p>
+        <p class="ceci-testimonial-role">Nutricionista</p>
+      </div>
+      
+      <div class="ceci-testimonial-card">
+        <div class="ceci-testimonial-quote">"</div>
+        <div class="ceci-testimonial-stars">★★★★★</div>
+        <p class="ceci-testimonial-text">"El ebook es increíble. Tengo recetas para todo el mes sin repetir. Mi piel se ve mejor, duermo más profundo y ya no tengo esos bajones de energía."</p>
+        <p class="ceci-testimonial-name">Ana López</p>
+        <p class="ceci-testimonial-role">Emprendedora</p>
+      </div>
+      
+      <div class="ceci-testimonial-card">
+        <div class="ceci-testimonial-quote">"</div>
+        <div class="ceci-testimonial-stars">★★★★★</div>
+        <p class="ceci-testimonial-text">"Siempre tuve problemas digestivos y probé de todo. Este fue el único enfoque que realmente funcionó. Lo mejor es que disfruto lo que como."</p>
+        <p class="ceci-testimonial-name">Carla Ruiz</p>
+        <p class="ceci-testimonial-role">Profesora</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 7: INCLUDES (Pricing) -->
+<!-- ========================================= -->
+
+<style>
+/* INCLUDES STYLES */
+.ceci-includes {
+  padding: 80px 20px;
+  background: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-includes * {
+  box-sizing: border-box;
+}
+.ceci-includes-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.ceci-includes-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ceci-includes-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.ceci-includes h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0;
+}
+.ceci-includes-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e5e5;
+}
+.ceci-includes-card-header {
+  background: #008980;
+  padding: 35px;
+  text-align: center;
+}
+.ceci-includes-card-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+.ceci-includes-card-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+.ceci-includes-pricing {
+  background: rgba(255, 202, 230, 0.3);
+  padding: 35px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.ceci-includes-discount {
+  display: inline-block;
+  background: #008980;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ceci-includes-prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.ceci-includes-price-old {
+  font-size: 22px;
+  color: #666666;
+  text-decoration: line-through;
+}
+.ceci-includes-price-new {
+  font-size: 48px;
+  font-weight: 700;
+  color: #008980;
+}
+.ceci-includes-price-currency {
+  font-size: 18px;
+  color: #666666;
+}
+.ceci-includes-price-note {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 15px;
+}
+.ceci-includes-benefits {
+  padding: 35px;
+}
+.ceci-includes-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.ceci-includes-benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ceci-includes-benefit-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffcae6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.ceci-includes-benefit-text {
+  font-size: 16px;
+  color: #222222;
+}
+.ceci-includes-modality {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.ceci-includes-modality-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0 0 15px 0;
+}
+.ceci-includes-modality-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ceci-includes-modality-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #666666;
+  font-size: 16px;
+}
+.ceci-includes-modality-list li:last-child {
+  margin-bottom: 0;
+}
+.ceci-includes-check {
+  color: #008980;
+  font-weight: bold;
+}
+.ceci-includes-cta {
+  text-align: center;
+}
+.ceci-includes-btn {
+  background: #008980;
+  color: #ffffff;
+  padding: 20px 50px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 137, 128, 0.4);
+  width: 100%;
+  max-width: 400px;
+}
+.ceci-includes-btn:hover {
+  background: #00A699;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 137, 128, 0.5);
+}
+.ceci-includes-guarantee {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .ceci-includes {
+    padding: 60px 15px;
+  }
+  .ceci-includes h2 {
+    font-size: 28px;
+  }
+  .ceci-includes-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .ceci-includes-price-new {
+    font-size: 38px;
+  }
+}
+</style>
+
+<section class="ceci-includes" id="inscripcion">
+  <div class="ceci-includes-container">
+    <div class="ceci-includes-header">
+      <span class="ceci-includes-badge">¿Qué incluye?</span>
+      <h2>Todo lo que necesitás para transformar tu cocina</h2>
+    </div>
+    
+    <div class="ceci-includes-card">
+      <div class="ceci-includes-card-header">
+        <h3 class="ceci-includes-card-title">Ciclo de Cocina Antiinflamatoria</h3>
+        <p class="ceci-includes-card-subtitle">12 talleres + Ebook exclusivo</p>
+      </div>
+      
+      <div class="ceci-includes-pricing">
+        <span class="ceci-includes-discount">35% OFF por tiempo limitado</span>
+        <div class="ceci-includes-prices">
+          <span class="ceci-includes-price-old">$120.000 ARS</span>
+          <span class="ceci-includes-price-new">$76.889</span>
+          <span class="ceci-includes-price-currency">ARS</span>
+        </div>
+        <p class="ceci-includes-price-note">Pago único • Acceso de por vida</p>
+      </div>
+      
+      <div class="ceci-includes-benefits">
+        <div class="ceci-includes-benefits-grid">
+          <div class="ceci-includes-benefit">
+            <span class="ceci-includes-benefit-icon">🎥</span>
+            <span class="ceci-includes-benefit-text">12 talleres en video de alta calidad</span>
+          </div>
+          <div class="ceci-includes-benefit">
+            <span class="ceci-includes-benefit-icon">📄</span>
+            <span class="ceci-includes-benefit-text">Ebook con +60 recetas adicionales</span>
+          </div>
+          <div class="ceci-includes-benefit">
+            <span class="ceci-includes-benefit-icon">⬇️</span>
+            <span class="ceci-includes-benefit-text">Recetas descargables en PDF</span>
+          </div>
+          <div class="ceci-includes-benefit">
+            <span class="ceci-includes-benefit-icon">👥</span>
+            <span class="ceci-includes-benefit-text">Acceso a comunidad privada</span>
+          </div>
+          <div class="ceci-includes-benefit">
+            <span class="ceci-includes-benefit-icon">⏱️</span>
+            <span class="ceci-includes-benefit-text">Acceso de por vida</span>
+          </div>
+          <div class="ceci-includes-benefit">
+            <span class="ceci-includes-benefit-icon">🎧</span>
+            <span class="ceci-includes-benefit-text">Soporte por email y WhatsApp</span>
+          </div>
+        </div>
+        
+        <div class="ceci-includes-modality">
+          <h4 class="ceci-includes-modality-title">Modalidad</h4>
+          <ul class="ceci-includes-modality-list">
+            <li><span class="ceci-includes-check">✓</span> 100% online y a tu ritmo</li>
+            <li><span class="ceci-includes-check">✓</span> Acceso inmediato al contenido</li>
+            <li><span class="ceci-includes-check">✓</span> Compatible con celular, tablet y computadora</li>
+          </ul>
+        </div>
+        
+        <div class="ceci-includes-cta">
+          <a href="#" class="ceci-includes-btn">Quiero Inscribirme Ahora</a>
+          <p class="ceci-includes-guarantee">Pago seguro • Acceso inmediato • Satisfacción garantizada</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 8: FAQ -->
+<!-- ========================================= -->
+
+<style>
+/* FAQ STYLES */
+.ceci-faq {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-faq * {
+  box-sizing: border-box;
+}
+.ceci-faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.ceci-faq-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.ceci-faq-badge {
+  display: inline-block;
+  background: #ffcae6;
+  color: #222222;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.ceci-faq h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 15px 0;
+}
+.ceci-faq-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666666;
+  margin: 0;
+}
+.ceci-faq-item {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.ceci-faq-question {
+  padding: 20px 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  transition: background 0.3s ease;
+}
+.ceci-faq-question:hover {
+  background: #fafafa;
+}
+.ceci-faq-question-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0;
+}
+.ceci-faq-toggle {
+  font-size: 20px;
+  color: #666666;
+  transition: transform 0.3s ease;
+}
+.ceci-faq-item.open .ceci-faq-toggle {
+  transform: rotate(180deg);
+}
+.ceci-faq-answer {
+  display: none;
+  padding: 0 25px 20px 25px;
+}
+.ceci-faq-item.open .ceci-faq-answer {
+  display: block;
+}
+.ceci-faq-answer p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0;
+}
+.ceci-faq-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+.ceci-faq-cta p {
+  font-size: 16px;
+  color: #666666;
+  margin: 0 0 15px 0;
+}
+.ceci-faq-btn {
+  border: 2px solid #008980;
+  color: #008980;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+.ceci-faq-btn:hover {
+  background: #008980;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .ceci-faq {
+    padding: 60px 15px;
+  }
+  .ceci-faq h2 {
+    font-size: 28px;
+  }
+}
+</style>
+
+<section class="ceci-faq">
+  <div class="ceci-faq-container">
+    <div class="ceci-faq-header">
+      <span class="ceci-faq-badge">FAQ</span>
+      <h2>Preguntas Frecuentes</h2>
+      <p class="ceci-faq-subtitle">Resolvemos tus dudas más comunes</p>
+    </div>
+    
+    <div class="ceci-faq-item open">
+      <div class="ceci-faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <p class="ceci-faq-question-text">¿Necesito experiencia previa en cocina?</p>
+        <span class="ceci-faq-toggle">▼</span>
+      </div>
+      <div class="ceci-faq-answer">
+        <p>No, el programa está diseñado para todos los niveles. Cada receta está explicada paso a paso con videos detallados. Si sabés encender una hornalla, podés hacer estas recetas.</p>
+      </div>
+    </div>
+    
+    <div class="ceci-faq-item">
+      <div class="ceci-faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <p class="ceci-faq-question-text">¿Cuánto tiempo tengo para completar el programa?</p>
+        <span class="ceci-faq-toggle">▼</span>
+      </div>
+      <div class="ceci-faq-answer">
+        <p>¡El acceso es de por vida! Podés avanzar a tu ritmo, repetir los módulos las veces que quieras y volver cuando lo necesites. No hay presión ni fechas límite.</p>
+      </div>
+    </div>
+    
+    <div class="ceci-faq-item">
+      <div class="ceci-faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <p class="ceci-faq-question-text">¿Los ingredientes son fáciles de conseguir?</p>
+        <span class="ceci-faq-toggle">▼</span>
+      </div>
+      <div class="ceci-faq-answer">
+        <p>Sí, todas las recetas usan ingredientes que encontrás en cualquier supermercado o verdulería. No necesitás productos importados ni difíciles de conseguir.</p>
+      </div>
+    </div>
+    
+    <div class="ceci-faq-item">
+      <div class="ceci-faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <p class="ceci-faq-question-text">¿Es apto para toda la familia?</p>
+        <span class="ceci-faq-toggle">▼</span>
+      </div>
+      <div class="ceci-faq-answer">
+        <p>¡Absolutamente! Las recetas son deliciosas para grandes y chicos. Muchas alumnas nos cuentan que su familia ni nota que están comiendo 'más saludable'.</p>
+      </div>
+    </div>
+    
+    <div class="ceci-faq-item">
+      <div class="ceci-faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <p class="ceci-faq-question-text">¿Puedo hacer consultas durante el programa?</p>
+        <span class="ceci-faq-toggle">▼</span>
+      </div>
+      <div class="ceci-faq-answer">
+        <p>Sí, tenés acceso a nuestra comunidad privada donde podés hacer preguntas, compartir tus avances y conectar con otras alumnas. También respondemos consultas por email.</p>
+      </div>
+    </div>
+    
+    <div class="ceci-faq-item">
+      <div class="ceci-faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <p class="ceci-faq-question-text">¿Qué pasa si no me gusta el programa?</p>
+        <span class="ceci-faq-toggle">▼</span>
+      </div>
+      <div class="ceci-faq-answer">
+        <p>Ofrecemos garantía de satisfacción de 7 días. Si sentís que el programa no es para vos, te devolvemos el 100% de tu inversión sin preguntas.</p>
+      </div>
+    </div>
+    
+    <div class="ceci-faq-cta">
+      <p>¿Tenés otra pregunta?</p>
+      <a href="https://wa.me/5491112345678" target="_blank" class="ceci-faq-btn">Escribinos por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- BLOQUE 9: FOOTER -->
+<!-- ========================================= -->
+
+<style>
+/* FOOTER STYLES */
+.ceci-footer {
+  padding: 60px 20px 30px;
+  background: #222222;
+  font-family: 'Poppins', sans-serif;
+}
+.ceci-footer * {
+  box-sizing: border-box;
+}
+.ceci-footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.ceci-footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.ceci-footer-brand p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 15px 0 0 0;
+  max-width: 300px;
+}
+.ceci-footer-logo {
+  height: 48px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+.ceci-footer-social {
+  display: flex;
+  gap: 12px;
+}
+.ceci-footer-social a {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.ceci-footer-social a:hover {
+  background: #008980;
+}
+.ceci-footer-legal {
+  display: flex;
+  gap: 20px;
+}
+.ceci-footer-legal a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.ceci-footer-legal a:hover {
+  color: #ffffff;
+}
+.ceci-footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+}
+.ceci-footer-bottom p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .ceci-footer {
+    padding: 40px 15px 20px;
+  }
+  .ceci-footer-main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ceci-footer-brand p {
+    max-width: 100%;
+  }
+  .ceci-footer-legal {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
+
+<footer class="ceci-footer">
+  <div class="ceci-footer-container">
+    <div class="ceci-footer-main">
+      <div class="ceci-footer-brand">
+        <img src="https://TU-DOMINIO.com/logo.png" alt="Ceci Duca" class="ceci-footer-logo">
+        <p>Transformando vidas a través de la cocina antiinflamatoria.</p>
+      </div>
+      
+      <div class="ceci-footer-social">
+        <a href="https://instagram.com/ceciduca" target="_blank" aria-label="Instagram">📷</a>
+        <a href="https://youtube.com/@ceciduca" target="_blank" aria-label="YouTube">▶️</a>
+        <a href="https://wa.me/5491112345678" target="_blank" aria-label="WhatsApp">💬</a>
+        <a href="mailto:hola@ceciduca.com" aria-label="Email">✉️</a>
+      </div>
+      
+      <div class="ceci-footer-legal">
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+    
+    <div class="ceci-footer-bottom">
+      <p>© 2025 Ceci Duca. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
