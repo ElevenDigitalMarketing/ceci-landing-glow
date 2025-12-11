@@ -81,7 +81,7 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-secondary/50 rounded-3xl -rotate-3"></div>
               <div className="relative rounded-2xl shadow-2xl overflow-hidden aspect-video">
                 <iframe
-                  src="https://player.vimeo.com/video/1145646916?h=f048d287f8&badge=0&autopause=0&player_id=0&app_id=58479"
+                  src="https://player.vimeo.com/video/1145673461?h=3299ba6aa2&badge=0&autopause=0&player_id=0&app_id=58479"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                   className="absolute top-0 left-0 w-full h-full"
