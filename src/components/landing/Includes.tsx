@@ -33,11 +33,16 @@ const Includes = () => {
             {/* Pricing */}
             <div className="bg-secondary/30 py-8 px-6 text-center border-b border-border">
               <div className="inline-block bg-primary text-primary-foreground font-poppins font-bold text-lg px-6 py-2.5 rounded-full mb-4">
-                Precio especial de lanzamiento
+                40% OFF
+              </div>
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <span className="font-poppins text-2xl text-muted-foreground line-through">
+                  $45.000
+                </span>
               </div>
               <div className="flex items-center justify-center gap-4 flex-wrap">
                 <span className="font-playfair text-5xl font-bold text-primary">
-                  $15.000
+                  $27.000
                 </span>
                 <span className="text-lg text-muted-foreground font-montserrat">ARS</span>
               </div>
