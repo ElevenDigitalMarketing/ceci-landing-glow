@@ -7,11 +7,9 @@ import Testimonials from "@/components/landing/Testimonials";
 import Includes from "@/components/landing/Includes";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
-
 const Index = () => {
-  return (
-    <main className="min-h-screen">
-      <Header />
+  return <main className="min-h-screen">
+      
       <Hero />
       <Problems />
       <Program />
@@ -20,8 +18,6 @@ const Index = () => {
       <Includes />
       <FAQ />
       <Footer />
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
