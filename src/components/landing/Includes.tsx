@@ -1,12 +1,10 @@
-import { Check, Video, FileText, Users, Clock, Download, Headphones } from "lucide-react";
+import { Check, Video, FileText, Clock, Lightbulb } from "lucide-react";
 
 const benefits = [
-  { icon: Video, text: "12 talleres en video de alta calidad" },
-  { icon: FileText, text: "Ebook con +60 recetas adicionales" },
-  { icon: Download, text: "Recetas descargables en PDF" },
-  { icon: Users, text: "Acceso a comunidad privada" },
-  { icon: Clock, text: "Acceso de por vida" },
-  { icon: Headphones, text: "Soporte por email y WhatsApp" },
+  { icon: Video, text: "Clase grabada en video de alta calidad" },
+  { icon: FileText, text: "PDF con recetas, reemplazos y paso a paso" },
+  { icon: Lightbulb, text: "Tips de conservación y presentación" },
+  { icon: Clock, text: "Acceso ilimitado de por vida" },
 ];
 
 const Includes = () => {
@@ -15,9 +13,9 @@ const Includes = () => {
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <span className="badge-pink mb-4">¿Qué incluye?</span>
+            <span className="badge-pink mb-4">Inscripción</span>
             <h2 className="heading-lg mb-4">
-              Todo lo que necesitás para transformar tu cocina
+              Accedé a la clase especial
             </h2>
           </div>
 
@@ -25,24 +23,21 @@ const Includes = () => {
             {/* Header */}
             <div className="bg-primary p-8 text-center">
               <h3 className="font-playfair text-3xl font-bold text-primary-foreground mb-2">
-                Ciclo de Cocina Antiinflamatoria
+                Mesa Dulce Saludable para Fiestas
               </h3>
               <p className="text-primary-foreground/80 font-montserrat">
-                12 talleres + Ebook exclusivo
+                Sin azúcar • Sin gluten • Sin lácteos
               </p>
             </div>
 
             {/* Pricing */}
             <div className="bg-secondary/30 py-8 px-6 text-center border-b border-border">
               <div className="inline-block bg-primary text-primary-foreground font-poppins font-bold text-lg px-6 py-2.5 rounded-full mb-4">
-                35% OFF por tiempo limitado
+                Precio especial de lanzamiento
               </div>
               <div className="flex items-center justify-center gap-4 flex-wrap">
-                <span className="text-2xl text-muted-foreground line-through font-montserrat">
-                  $120.000 ARS
-                </span>
                 <span className="font-playfair text-5xl font-bold text-primary">
-                  $76.889
+                  $15.000
                 </span>
                 <span className="text-lg text-muted-foreground font-montserrat">ARS</span>
               </div>
@@ -94,7 +89,7 @@ const Includes = () => {
                   Quiero Inscribirme Ahora
                 </a>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  Pago seguro • Acceso inmediato • Satisfacción garantizada
+                  Pago seguro • Acceso inmediato
                 </p>
               </div>
             </div>

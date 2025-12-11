@@ -1,32 +1,39 @@
-import { Star, Users, Clock, BookOpen } from "lucide-react";
-import ceciHero from "@/assets/ceci-hero.jpg";
+import { Star, Video, FileText, Clock } from "lucide-react";
 import logo from "@/assets/logo.png";
+
 const Hero = () => {
-  return <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 bg-gradient-to-b from-secondary/30 to-background">
+  return (
+    <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 bg-gradient-to-b from-secondary/30 to-background">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="order-2 lg:order-1 animate-fade-in">
             <div className="flex items-center gap-3 mb-6">
               <img src={logo} alt="Ceci Duca" className="h-10 w-auto" />
-              <span className="badge-pink">12 Talleres + Ebook</span>
+              <span className="badge-pink">Clase Especial</span>
             </div>
             
-            <h1 className="heading-xl mb-6 text-balance">
-              Transforma tu salud con el{" "}
-              <span className="text-primary">Ciclo de Cocina Antiinflamatoria</span>
+            <h1 className="heading-xl mb-4 text-balance">
+              <span className="text-primary">Mesa Dulce Saludable</span>{" "}
+              para Fiestas
             </h1>
             
+            <p className="font-poppins font-semibold text-lg text-foreground mb-4">
+              Sin azúcar, sin gluten, sin lácteos
+            </p>
+            
             <p className="body-text mb-8 max-w-xl">
-              Descubre cómo preparar recetas deliciosas que reducen la inflamación, 
-              mejoran tu digestión y te llenan de energía. Sin complicaciones, 
-              con ingredientes accesibles y resultados reales.
+              Estas fiestas, sorprendé con una mesa dulce deliciosa y 100% saludable. 
+              Aprendé técnicas simples, recetas probadas y los secretos para lograr 
+              postres increíbles sin azúcar, sin ultraprocesados y llenos de sabor.
             </p>
 
             {/* Rating */}
             <div className="flex items-center gap-4 mb-8">
               <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                ))}
               </div>
               <span className="font-poppins font-medium text-foreground">4.9/5</span>
               <span className="text-muted-foreground">• +500 alumnas satisfechas</span>
@@ -38,7 +45,7 @@ const Hero = () => {
                 Quiero Inscribirme
               </a>
               <a href="#programa" className="btn-secondary text-center">
-                Ver Programa Completo
+                Ver Qué Incluye
               </a>
             </div>
 
@@ -46,38 +53,47 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-border">
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
-                  <BookOpen className="w-5 h-5 text-primary" />
+                  <Video className="w-5 h-5 text-primary" />
                 </div>
-                <p className="font-playfair font-bold text-2xl text-foreground">12</p>
-                <p className="text-sm text-muted-foreground">Talleres</p>
+                <p className="font-playfair font-bold text-2xl text-foreground">1</p>
+                <p className="text-sm text-muted-foreground">Clase Grabada</p>
+              </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center mb-2">
+                  <FileText className="w-5 h-5 text-primary" />
+                </div>
+                <p className="font-playfair font-bold text-2xl text-foreground">PDF</p>
+                <p className="text-sm text-muted-foreground">Detallado</p>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Clock className="w-5 h-5 text-primary" />
                 </div>
-                <p className="font-playfair font-bold text-2xl text-foreground">+20h</p>
-                <p className="text-sm text-muted-foreground">Contenido</p>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <Users className="w-5 h-5 text-primary" />
-                </div>
-                <p className="font-playfair font-bold text-2xl text-foreground">+500</p>
-                <p className="text-sm text-muted-foreground">Alumnas</p>
+                <p className="font-playfair font-bold text-2xl text-foreground">∞</p>
+                <p className="text-sm text-muted-foreground">Acceso Ilimitado</p>
               </div>
             </div>
           </div>
 
-          {/* Image */}
+          {/* Video */}
           <div className="order-1 lg:order-2 animate-fade-in-right">
             <div className="relative">
               <div className="absolute -inset-4 bg-secondary/50 rounded-3xl -rotate-3"></div>
-              <img src={ceciHero} alt="Ceci Duca preparando recetas antiinflamatorias" className="relative rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover" loading="eager" />
-              
+              <div className="relative rounded-2xl shadow-2xl overflow-hidden aspect-video">
+                <iframe
+                  src="https://player.vimeo.com/video/1145646916?h=f048d287f8&badge=0&autopause=0&player_id=0&app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  className="absolute top-0 left-0 w-full h-full"
+                  title="Mesa Dulce Saludable para Fiestas"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

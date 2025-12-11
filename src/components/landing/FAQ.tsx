@@ -8,27 +8,27 @@ import {
 const faqs = [
   {
     question: "¿Necesito experiencia previa en cocina?",
-    answer: "No, el programa está diseñado para todos los niveles. Cada receta está explicada paso a paso con videos detallados. Si sabés encender una hornalla, podés hacer estas recetas.",
+    answer: "No, la clase está diseñada para todos los niveles. Cada receta está explicada paso a paso con video detallado. Si sabés encender una hornalla, podés hacer estas recetas.",
   },
   {
-    question: "¿Cuánto tiempo tengo para completar el programa?",
-    answer: "¡El acceso es de por vida! Podés avanzar a tu ritmo, repetir los módulos las veces que quieras y volver cuando lo necesites. No hay presión ni fechas límite.",
+    question: "¿Cuánto tiempo tengo para ver la clase?",
+    answer: "¡El acceso es de por vida! Podés verla a tu ritmo, repetirla las veces que quieras y volver cuando lo necesites. No hay presión ni fechas límite.",
   },
   {
     question: "¿Los ingredientes son fáciles de conseguir?",
-    answer: "Sí, todas las recetas usan ingredientes que encontrás en cualquier supermercado o verdulería. No necesitás productos importados ni difíciles de conseguir.",
+    answer: "Sí, todas las recetas usan ingredientes que encontrás en cualquier supermercado o dietética. No necesitás productos importados ni difíciles de conseguir.",
   },
   {
-    question: "¿Es apto para toda la familia?",
-    answer: "¡Absolutamente! Las recetas son deliciosas para grandes y chicos. Muchas alumnas nos cuentan que su familia ni nota que están comiendo 'más saludable'.",
+    question: "¿Son aptas para personas con intolerancias?",
+    answer: "¡Sí! Las recetas son sin azúcar, sin gluten y sin lácteos. Son ideales para celíacos, intolerantes a la lactosa y personas que evitan el azúcar refinada.",
   },
   {
-    question: "¿Puedo hacer consultas durante el programa?",
-    answer: "Sí, tenés acceso a nuestra comunidad privada donde podés hacer preguntas, compartir tus avances y conectar con otras alumnas. También respondemos consultas por email.",
+    question: "¿Puedo hacer las recetas para vender?",
+    answer: "¡Absolutamente! Muchas alumnas usan estas recetas para sus emprendimientos de pastelería saludable. Son recetas probadas que quedan perfectas.",
   },
   {
-    question: "¿Qué pasa si no me gusta el programa?",
-    answer: "Ofrecemos garantía de satisfacción de 7 días. Si sentís que el programa no es para vos, te devolvemos el 100% de tu inversión sin preguntas.",
+    question: "¿Cómo accedo al contenido después de pagar?",
+    answer: "Inmediatamente después del pago recibís un email con el acceso a la plataforma donde está la clase grabada y el PDF descargable.",
   },
 ];
 
