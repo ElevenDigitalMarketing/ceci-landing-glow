@@ -1,54 +1,31 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const testimonials = [
-  {
-    name: "María García",
-    role: "Mamá de 2",
-    text: "Después de años con hinchazón y cansancio, este programa me cambió la vida. Las recetas son deliciosas y mi familia las ama. Bajé 5 kilos sin hacer dieta.",
-    rating: 5,
-  },
-  {
-    name: "Laura Fernández",
-    role: "Ejecutiva",
-    text: "Pensé que no tendría tiempo, pero las recetas son tan simples que ahora cocino más que antes. Mi digestión mejoró increíblemente y tengo más energía.",
-    rating: 5,
-  },
-  {
-    name: "Sofía Martínez",
-    role: "Nutricionista",
-    text: "Como profesional de la salud, recomiendo este programa a mis pacientes. Ceci explica todo con fundamento científico pero de forma comprensible.",
-    rating: 5,
-  },
-  {
-    name: "Ana López",
-    role: "Emprendedora",
-    text: "El ebook es increíble. Tengo recetas para todo el mes sin repetir. Mi piel se ve mejor, duermo más profundo y ya no tengo esos bajones de energía.",
-    rating: 5,
-  },
-  {
-    name: "Carla Ruiz",
-    role: "Profesora",
-    text: "Siempre tuve problemas digestivos y probé de todo. Este fue el único enfoque que realmente funcionó. Lo mejor es que disfruto lo que como.",
-    rating: 5,
-  },
+const testimonialImages = [
+  "https://d1yei2z3i6k35z.cloudfront.net/15460958/693aebc331fc4_Archivo_001.png",
+  "https://d1yei2z3i6k35z.cloudfront.net/15460958/693aebcf9863d_Archivo_002.png",
+  "https://d1yei2z3i6k35z.cloudfront.net/15460958/693aebda2f604_Archivo_003.png",
+  "https://d1yei2z3i6k35z.cloudfront.net/15460958/693aebea6431b_Archivo_004.png",
+  "https://d1yei2z3i6k35z.cloudfront.net/15460958/693aebf959a48_Archivo_006.png",
+  "https://d1yei2z3i6k35z.cloudfront.net/15460958/693aec03471f1_Archivo_009.jpg",
+  "https://d1yei2z3i6k35z.cloudfront.net/15460958/693aec12b240a_Archivo_011.png",
 ];
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    setCurrentIndex((prev) => (prev + 1) % testimonialImages.length);
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex((prev) => (prev - 1 + testimonialImages.length) % testimonialImages.length);
   };
 
-  const getVisibleTestimonials = () => {
+  const getVisibleImages = () => {
     const result = [];
     for (let i = 0; i < 3; i++) {
-      result.push(testimonials[(currentIndex + i) % testimonials.length]);
+      result.push(testimonialImages[(currentIndex + i) % testimonialImages.length]);
     }
     return result;
   };
@@ -62,47 +39,35 @@ const Testimonials = () => {
             Lo que dicen nuestras alumnas
           </h2>
           <p className="body-text">
-            Más de 500 mujeres ya transformaron su relación con la comida y su salud.
+            Mirá lo que opinan quienes ya probaron las recetas.
           </p>
         </div>
 
-        {/* Mobile: Single testimonial */}
+        {/* Mobile: Single image */}
         <div className="lg:hidden">
-          <div className="bg-card border border-border rounded-2xl p-6">
-            <Quote className="w-10 h-10 text-secondary mb-4" />
-            <div className="flex gap-1 mb-4">
-              {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-              ))}
-            </div>
-            <p className="body-text mb-6 italic">"{testimonials[currentIndex].text}"</p>
-            <div>
-              <p className="font-poppins font-semibold text-foreground">
-                {testimonials[currentIndex].name}
-              </p>
-              <p className="text-sm text-muted-foreground">{testimonials[currentIndex].role}</p>
-            </div>
+          <div className="bg-card border border-border rounded-2xl overflow-hidden">
+            <img
+              src={testimonialImages[currentIndex]}
+              alt={`Testimonio ${currentIndex + 1}`}
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
           </div>
         </div>
 
-        {/* Desktop: 3 testimonials */}
+        {/* Desktop: 3 images */}
         <div className="hidden lg:grid lg:grid-cols-3 gap-6">
-          {getVisibleTestimonials().map((testimonial, index) => (
+          {getVisibleImages().map((image, index) => (
             <div
-              key={`${testimonial.name}-${currentIndex}-${index}`}
-              className="bg-card border border-border rounded-2xl p-6 card-hover"
+              key={`${image}-${currentIndex}-${index}`}
+              className="bg-card border border-border rounded-2xl overflow-hidden card-hover"
             >
-              <Quote className="w-10 h-10 text-secondary mb-4" />
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="body-text mb-6 italic line-clamp-4">"{testimonial.text}"</p>
-              <div>
-                <p className="font-poppins font-semibold text-foreground">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-              </div>
+              <img
+                src={image}
+                alt={`Testimonio ${(currentIndex + index) % testimonialImages.length + 1}`}
+                className="w-full h-auto object-contain"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
@@ -117,7 +82,7 @@ const Testimonials = () => {
             <ChevronLeft className="w-5 h-5 text-foreground" />
           </button>
           <div className="flex gap-2">
-            {testimonials.map((_, index) => (
+            {testimonialImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
